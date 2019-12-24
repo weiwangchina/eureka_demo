@@ -3,7 +3,7 @@ from java:8-alpine
 # 设置生成这个镜像的作者
 maintainer zh
 workdir /data
-add ./demo-server-1.0.0.SNAPSHOT.jar /data/jar/app.jar
+add ./eureka.jar /data/jar/app.jar
 
 # RUN 执行命令并创建新的镜像层，RUN 经常用于安装软件包。
 # CMD 设置容器启动后默认执行的命令及其参数，但 CMD 能够被 docker run 后面跟的命令行参数替换
